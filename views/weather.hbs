@@ -1,0 +1,36 @@
+
+<br>
+
+<div class="col-sm-8">
+<div class="card text-white bg-dark mb-3">
+    <div class="card-header">
+    <h3><strong>{{city}}, {{country}}</strong></h3>
+    </div>
+
+<div class="row" >
+
+    <div class="col-sm-6">
+        <div class="card border-dark text-white bg-dark mb-3" style="height: 8em;">
+            <div class="card-body">
+                <i class="fa fa-arrow-circle-o-up fa-5x" style=" float:left; margin-right: 20px; transform:rotate({{winddirection}}deg)"></i>
+                <span style="font-size: 2em;">{{windspeed}} Knopen</span> <br>
+                {{benaming}}
+            </div>
+        </div>
+    </div>
+
+
+        <div class="col-sm-6">
+            <div class="card border-dark text-white bg-dark mb-3" style="height: 8em;">
+                <div class="card-body">
+                    <i class="owf owf-{{id}}-d owf-5x owf-pull-left"></i>
+                    <span style="font-size: 2em;">{{temp}}°C</span> <br>
+                    Min: {{temp_min}}°C Max: {{temp_max}}°C
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+

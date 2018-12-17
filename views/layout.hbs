@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Bootstrap 4 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://github.com/erikflowers/weather-icons/tree/master/css" rel="stylesheet" type="text/css">
+    <link href="https://websygen.github.io/owfont/css/owfont-regular.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <br>
+    <form method="get" class="form-inline" action="weather">
+
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="text" name="city"  class="form-control" placeholder="Stad" required>
+
+        </div>
+        <button type="submit" class="btn btn-dark mb-2">Bekijk weer</button>
+
+    </form>
+    {{#if error}}
+        <div class="mx-sm-3 mb-2">
+            <div class="alert alert-danger">
+                <strong>Error:</strong> De stad is niet gevonden
+            </div>
+        </div>
+    {{/if}}
+
+    {{{body}}}
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</html> 
